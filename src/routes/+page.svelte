@@ -266,7 +266,7 @@
 					<div class="mt-6 flex gap-6">
 						{@render SocialLink('Follow on Twitter', 'https://x.com/WhelptonJamie', TwitterIcon)}
 						{@render SocialLink(
-							'Follow on Instragram',
+							'Follow on Instagram',
 							'https://www.instagram.com/jamie.whelpton/',
 							InstagramIcon
 						)}

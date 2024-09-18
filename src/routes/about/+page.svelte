@@ -78,7 +78,7 @@
 						{@render SocialLink(
 							'https://www.instagram.com/jamie.whelpton/',
 							InstagramIcon,
-							'Follow on instragram'
+							'Follow on Instagram'
 						)}
 						{@render SocialLink('https://github.com/JamieDW', GitHubIcon, 'Follow on GitHub')}
 						{@render SocialLink(

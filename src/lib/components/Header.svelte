@@ -8,7 +8,7 @@
 		<a
 			{href}
 			aria-current={href === $page.url.pathname}
-			class="aria-current:text-teal-500 aria-current:dark:text-teal-400 relative block px-3 py-2 transition hover:text-teal-500 dark:hover:text-teal-400"
+			class="aria-current:text-teal-500 aria-current:dark:text-teal-400 relative block px-2 py-2 transition hover:text-teal-500 md:px-3 dark:hover:text-teal-400"
 		>
 			{title}
 			{#if href === $page.url.pathname}
@@ -20,10 +20,10 @@
 	</li>
 {/snippet}
 
-{#snippet DesktopNavigation()}
+{#snippet Navigation()}
 	<nav class="pointer-events-auto hidden md:block">
 		<ul
-			class="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
+			class="flex rounded-full bg-white/90 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur md:px-3 dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10"
 		>
 			{@render NavItem('/about', 'About')}
 			{@render NavItem('/articles', 'Articles')}
@@ -46,7 +46,7 @@
 			<div class="mx-auto w-full max-w-7xl lg:px-8">
 				<div class="relative px-4 sm:px-8 lg:px-12">
 					<div class="mx-auto max-w-2xl lg:max-w-5xl">
-						<div class="relative flex gap-4">
+						<div class="relative flex justify-center md:gap-4">
 							<div class="flex flex-1">
 								<div
 									class="h-10 w-10 rounded-full bg-white/90 p-0.5 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:ring-white/10"
@@ -61,10 +61,10 @@
 									>
 								</div>
 							</div>
-							<div class="flex flex-1 justify-end md:justify-center">
-								{@render DesktopNavigation()}
+							<div class="flex flex-1 justify-center">
+								{@render Navigation()}
 							</div>
-							<div class="flex justify-end md:flex-1">
+							<div class="flex flex-1 justify-end">
 								<div class="pointer-events-auto">
 									<ThemeToggle />
 								</div>
